@@ -15,8 +15,7 @@ if 'model' not in st.session_state or 'data' not in st.session_state or 'matrix'
     df = pd.read_csv('dataset/data_bersih_metadata.csv')
     st.session_state['data'] = df
 
-
-st.title(':tv:REKOMENDASI MOVIE ALLFIANTO H.P')
+st.title(':tv: REKOMENDASI MOVIE ALLFIANTO H.P')
 search, image = st.columns([3,1], gap='large')
 
 with search:
