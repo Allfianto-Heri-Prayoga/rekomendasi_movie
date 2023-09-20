@@ -16,7 +16,7 @@ if 'model' not in st.session_state or 'data' not in st.session_state or 'matrix'
     st.session_state['data'] = df
 
 
-st.title(':tv: FILM YANG ALLFIANTO H.P REKOMENDASIKAN')
+st.title(':tv:REKOMENDASI MOVIE ALLFIANTO H.P')
 search, image = st.columns([3,1], gap='large')
 
 with search:
