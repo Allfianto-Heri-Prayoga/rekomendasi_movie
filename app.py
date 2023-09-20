@@ -16,7 +16,7 @@ if 'model' not in st.session_state or 'data' not in st.session_state or 'matrix'
     st.session_state['data'] = df
 
 
-st.title(':tv: Recommendation System')
+st.title(':tv: FILM YANG ALLFIANTO H.P REKOMENDASIKAN')
 search, image = st.columns([3,1], gap='large')
 
 with search:
@@ -30,7 +30,7 @@ with image:
     st.image(image_link, width=70)
 
 if st.button('Recommend Me Movies'):
-    st.subheader('Movies yang direkomendasikan :movie_camera:')
+    st.subheader('Movies yang direkomendasikan ALLFIANTO H.P :movie_camera:')
     idx = st.session_state['data'][st.session_state['data']['Series_Title'] == movies].index[0]
     content = st.session_state['data'].loc[idx, 'text-prep-stem']
     watched = st.session_state['model'].transform([content])
